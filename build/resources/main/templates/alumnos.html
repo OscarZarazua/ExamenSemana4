@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html>
+<tbody>
+<tr th:each="student: ${students}">
+    <td th:text="${student.dni}" />
+    <td th:text="${student.nombre}" />
+    <td th:text="${student.apellido}" />
+    <td th:text="${student.direccion}" />
+    <td th:text="${student.correo}" />
+
+</tr>
+</tbody>
+</html>
